@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar/navbar";
+import Navbar from "./components/navbar/Navbar"; 
 
+/* Previous code for fonts, not using them for now, but may use them in the future.
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+*/
 export const metadata: Metadata = {
   title: "TravelSoru",
   description: "Welcome To TravelSoru!",
@@ -33,7 +35,7 @@ export default function RootLayout({
       <body
         className={font.className}
       >
-        <Navbar />
+        <Navbar/>
         {children}
       </body>
     </html>

@@ -1,19 +1,21 @@
+import Container from "../Container";
+import Logo from "./Logo";
+import Search from "./Search";
+
+//Anything passed in Container will be passed as children and rendered in the div in the Container component
+
 const Navbar = () => {
   return (
-    <nav className="w-full h-16 bg-gray-800 text-white flex items-center justify-between px-4">
-      <div className="text-xl font-bold">TravelSoru</div>
-      <div className="flex space-x-4">
-        <a className="hover:text-gray-300">
-          Home
-        </a>
-        <a href="/destinations" className="hover:text-gray-300">
-          Destinations
-        </a>
-        <a href="/about" className="hover:text-gray-300">
-          About
-        </a>
-      </div>
-    </nav>
+    <div className="fixed w-full bg-white z-10 shadow-sm">
+        <div className="py-4 border-b border-gray-200">
+            <Container>
+                <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
+                    <Logo/>
+                    <Search />
+                </div>
+            </Container>
+        </div>
+    </div>
   );
 };
 
