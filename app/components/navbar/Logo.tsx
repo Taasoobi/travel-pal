@@ -9,8 +9,8 @@ const Logo = () => {
     <Image
       alt="TravelPal Logo"
       className="hidden md:block cursor-pointer"
-      height="100"
-      width="100"
+      height="75"
+      width="75"
       src="/images/TravelPalv1.png"
     />
   );
