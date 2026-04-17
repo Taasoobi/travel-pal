@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar/Navbar"; 
+import Navbar from "./components/navbar/Navbar";
+import Modal from "./components/modals/Modal"; 
 
 /* Previous code for fonts, not using them for now, but may use them in the future.
 const geistSans = Geist({
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body
         className={font.className}
       >
+        <Modal isOpen/>
         <Navbar/>
         {children}
       </body>
