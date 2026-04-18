@@ -9,9 +9,9 @@ generator client {
 }
 
 //cluster username and password are both: taaseen
+//datasource url does not work anymore -> url = env("DATABASE_URL")
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
 }
 
 model User {
