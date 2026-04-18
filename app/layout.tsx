@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 //import Modal from "./components/modals/Modal"; //used to check styling of modal during creation.
 import RegisterModal from "./components/modals/RegisterModal";
+import ToasterProvider from "./providers/ToasterProvider";
 
 /* Previous code for fonts might use future.
 const geistSans = Geist({
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body
         className={font.className}
       >
+        <ToasterProvider/>
         <RegisterModal/>
         <Navbar/>
         {children}
