@@ -1,6 +1,6 @@
-//TIME: 1:02:00
+//TIME: 1:16:07
 
-import Image from "next/image";
+//import Image from "next/image";
 
 export default function Home() {
   return (
